@@ -1,13 +1,13 @@
-public class Main {
+public class Main
+{
     public static void main (String[] args)
     {
-        double salesTax = .05;
-        double price = 55;
-        double totalTax = salesTax * price;
-        double totalPrice = totalTax + price;
+        final double SALES_TAX_RATE = .05;
+        double purchasePrice = 55;
+        double totalTax = SALES_TAX_RATE * purchasePrice;
+        double totalPrice = totalTax + purchasePrice;
 
         System.out.println("The sales tax is: $" + totalTax);
-        System.out.println("The total price with tax is: $" + totalPrice);
-
+        System.out.println("The total purchasePrice with tax is: $" + totalPrice);
     }
 }
